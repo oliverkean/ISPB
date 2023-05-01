@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthenticateController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::resource('authenticate', AuthenticateController::class);
+Route::resource('dashboard', DashboardController::class);
