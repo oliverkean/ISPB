@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,4 +30,5 @@ Route::resource('add-users', AddUserController::class);
 Route::resource('products-list', ProductController::class);
 Route::resource('users-list', UserController::class);
 Route::resource('profile', ProfileController::class);
+Route::resource('orders', OrderController::class);
 
