@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class AddUserController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('page_content.dashboard');
+        return view('authentication.add_user');
     }
 
     /**
@@ -19,7 +19,7 @@ class DashboardController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
