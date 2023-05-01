@@ -2,42 +2,52 @@
 @section('title', 'Login')
 @section('content')
 
-    <div class="container" style="max-width: 500px; margin-top: 50px;">
+    <div class="container" style="max-width: 800px; margin-top: 50px;">
         <div class="card p-5">
-            <form action="">
-                <h1 class="h1 h1-responsive-sm h1-responsive-md h1-responsive-lg" style="text-align: center">ISPB LOGIN</h1>
-                @if(Session::has('success'))
-                    <div class="alert alert-success">{{Session::get('success')}}</div>
-                @endif
-                @if(Session::has('fail'))
-                    <div class="alert alert-danger">{{Session::get('fail')}}</div>
-                @endif
+            <div class="row justify-content-md-between">
+                <div class="col">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae reiciendis ipsa rerum, omnis libero error nihil vitae explicabo magni asperiores in tempore incidunt aliquid alias corrupti sapiente nobis veritatis quo?
+                </div>
+                <div class="col">
+                    <form action="">
+                        @if(Session::has('success'))
+                            <div class="alert alert-success">{{Session::get('success')}}</div>
+                        @endif
+                        @if(Session::has('fail'))
+                            <div class="alert alert-danger">{{Session::get('fail')}}</div>
+                        @endif
+                        
+                        <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center">ISPB LOGIN</h2>
+                        <br>
 
-                <div class="mb-3">
-                    <label for="" class="form-label">Username</label>
-                    <input type="text" class="form-control input-group-sm input-group-md input-group-lg" name="Username" id="Email" value="{{old('Username')}}">
-                    <span class="text-danger">@error('Username') {{$message}} @enderror</span>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control input-group-sm input-group-md input-group-lg" name="Username" id="Email" value="{{old('Username')}}" placeholder="Username">
+                            <label for="Username"><i class="bi bi-person-fill"></i> Username</label>
+                            <span class="text-danger">@error('Username') {{$message}} @enderror</span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" name="Password" id="Password" value="{{old('Password')}}" placeholder="Password">
+                            <label for="Password"><i class="bi bi-lock-fill"></i> Password</label>
+                            <span class="text-danger">@error('Password') {{$message}} @enderror</span>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-sm btn-md btn-lg w-100 rounded-circle-5" id="submit" onclick="loading()">
+                                <span class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"></span>
+                                <span id="btn-text">Login</span>
+                            </button>
+                        </div>
+                        <script>
+                            function loading() {
+                            var spinner = document.querySelector(".spinner-border");
+                            var btnText = document.getElementById("btn-text");
+                            spinner.classList.remove("d-none");
+                            btnText.innerHTML = "Authenticating...";
+                        }
+                        </script>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" name="Password" id="Password" value="{{old('Password')}}">
-                    <span class="text-danger">@error('Password') {{$message}} @enderror</span>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-success btn-sm btn-md btn-lg w-100 rounded-circle-5" id="submit" onclick="loading()">
-                        <span class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"></span>
-                        <span id="btn-text">Login</span>
-                    </button>
-                </div>
-                <script>
-                    function loading() {
-                    var spinner = document.querySelector(".spinner-border");
-                    var btnText = document.getElementById("btn-text");
-                    spinner.classList.remove("d-none");
-                    btnText.innerHTML = "Processing..";
-                }
-                </script>
-            </form>
+            </div>
         </div>
     </div>
 
