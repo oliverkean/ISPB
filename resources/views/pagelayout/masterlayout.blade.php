@@ -11,6 +11,20 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
+        <div class="container-fluid justify-content-space-between ">
+            <div class="nav-item">
+                <a class="navbar-brand text-white" href="{{url('/')}}">ISPB</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="{{route('authenticate.index')}}" class="nav-link text-white">Login</a>
+            </div>
+            
+        </div>
+    </nav>
+
+
     <section>
         @yield('content')
     </section>
