@@ -1,0 +1,35 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'system-ui';
+}
+
+.welcome_cont{
+    background-image: url('../images/welcome_background.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+}
+
+
+.welcome_title_container{
+    color: white;
+    width: 100%;
+
+    padding-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.welcome_title_container h1{
+    font-size: 70px;
+    font-family: 'comic-sans';
+}
+
+.welcome_title_container h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
