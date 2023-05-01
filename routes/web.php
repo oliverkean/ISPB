@@ -3,6 +3,7 @@
 use App\Http\Controllers\AddUserController;
 use App\Http\Controllers\AuthenticateController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,4 @@ Route::get('/', function () {
 Route::resource('authenticate', AuthenticateController::class);
 Route::resource('dashboard', DashboardController::class);
 Route::resource('add-users', AddUserController::class);
+Route::resource('products-list', ProductController::class);
