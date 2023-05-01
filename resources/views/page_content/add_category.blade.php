@@ -1,5 +1,5 @@
 @extends('pagelayout.dashboard_layout')
-@section('title', 'Add Users')
+@section('title', 'Add Category')
 
 @section('css', 'manualcss/add_user.css')
 
@@ -7,17 +7,9 @@
     <div class="container form_container">
         <form action="" class="form" method="POST" enctype="multipart/form-data">
             <div class="form-item mb-5 profile_pic">
-
                 <img src="{{ asset('images/cat_default.jpg') }}" class=" image_pic rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px">
-                <h3 class="text-white">Profile picture</h3>
+                <h3 class="text-white">Category picture</h3>
             </div>
-
-            <div class="input-group">
-                <input type="file" class="form-control" id="inputGroupFile02" onchange="loadFile(event)">
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
-            </div>
-            <p class="text-danger">Validation error message here</p>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Firstname" id="Firstname" value="{{old('Firstname')}}" placeholder="Firstname">
