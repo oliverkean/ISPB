@@ -10,7 +10,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center">ORDER's TABLE</h2>
                     <div class="col d-flex justify-content-end">
-                        <button type="button" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Users</button>
+                        <button type="button" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Orders</button>
                     </div>
                 </div>
             </div>
