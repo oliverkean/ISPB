@@ -4,6 +4,7 @@ use App\Http\Controllers\AddUserController;
 use App\Http\Controllers\AuthenticateController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,5 @@ Route::resource('authenticate', AuthenticateController::class);
 Route::resource('dashboard', DashboardController::class);
 Route::resource('add-users', AddUserController::class);
 Route::resource('products-list', ProductController::class);
+Route::resource('users-list', UserController::class);
+
