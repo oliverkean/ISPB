@@ -23,6 +23,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/practice', function () {
+    return view('practice');
+});
 
 Route::resource('authenticate', AuthenticateController::class);
 Route::resource('dashboard', DashboardController::class);
