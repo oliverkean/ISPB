@@ -18,11 +18,11 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark p-4">
         <div class="container-fluid justify-content-space-between ">
             <div class="nav-item">
-                <a class="navbar-brand text-white" href="{{route('dashboard.index')}}">PROFILE</a>
+                <a class="navbar-brand text-white" href="{{route('dashboard.index')}}">DASHBOARD</a>
             </div>
 
             <div class="nav-item dashboard_links">
-                <a href="" class="nav-link">orders</a>
+                <a href="{{route('orders.index')}}" class="nav-link">orders</a>
                 <a href="{{route('products-list.index')}}" class="nav-link">products</a>
                 <a href="{{route('users-list.index')}}" class="nav-link">Users list</a>
                 <a href="{{route('add-users.index')}}" class="nav-link">Add users</a>
