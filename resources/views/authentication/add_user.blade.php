@@ -5,49 +5,88 @@
 
 @section('content')
     <div class="container form_container">
-        <form action="" class="form">
-            <div class="mb-5 container text-center text-white">
-                <i class="bi bi-person-fill-add user_icon"></i>
+        <form action="" class="form" method="POST" enctype="multipart/form-data">
+            <img src="{{ asset('images/cat_default.jpg') }}" class="rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px">
+
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02" onchange="loadFile(event)">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
             </div>
 
-            <div class="mb-3 label_container">
-                <input type="text" class="form-control" placeholder="First name">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="Firstname" id="Firstname" value="{{old('Firstname')}}" placeholder="Firstname">
+                <label for="Firstname">Firstname</label>
+                <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
+                <p class="text-danger">Validation error message here</p>
             </div>
-            <div class="mb-3 label_container">
-                <p class="text-danger">*Validation error message here</p>
-            </div>
-
-            <div class="mb-3 label_container">
-                <input type="text" class="form-control" placeholder="Last name">
-            </div>
-            <div class="mb-3 label_container">
-                <p class="text-danger">*Validation error message here</p>
-            </div>
-
-            <div class="mb-3 label_container">
-                <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <div class="mb-3 label_container">
-                <p class="text-danger">*Validation error message here</p>
+            
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="Middlename" id="Middlename" value="{{old('Middlename')}}" placeholder="Middlename">
+                <label for="Middlename">Middlename</label>
+                <span class="text-danger">@error('Middlename') {{$message}} @enderror</span>
+                <p class="text-danger">Validation error message here</p>
             </div>
 
-            <div class="mb-3 text-center">
-                <div class="dropdown">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="Lastname" id="Lastname" value="{{old('Lastname')}}" placeholder="Lastname">
+                <label for="Lastname">Lastname</label>
+                <span class="text-danger">@error('Lastname') {{$message}} @enderror</span>
+                <p class="text-danger">Validation error message here</p>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" name="Password" id="Password" value="{{old('Password')}}" placeholder="Password">
+                <label for="Password">Password</label>
+                <span class="text-danger">@error('Password') {{$message}} @enderror</span>
+                <p class="text-danger">Validation error message here</p>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="date" class="form-control" name="Birthdate" id="Birthdate" value="{{old('Birthdate')}}" placeholder="Birthdate">
+                <label for="Birthdate">Birthdate</label>
+                <span class="text-danger">@error('Birthdate') {{$message}} @enderror</span>
+                <p class="text-danger">Validation error message here</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6 text-center mb-3">
+                    <div class="dropdown">
                     <a class="btn dropdown_btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Roles
+                        Gender
                     </a>
-                  
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Administrator</a></li>
-                      <li><a class="dropdown-item" href="#">Inventory clerk</a></li>
+                        <li><a class="dropdown-item" href="#">Male</a></li>
+                        <li><a class="dropdown-item" href="#">Female</a></li>
+                        <li><a class="dropdown-item" href="#">Spaceship</a></li>
                     </ul>
-                  </div>
-            </div>   
+                    </div>
+                </div>
+
+                <div class="col-sm-6 text-center mb-3">
+                    <div class="dropdown">
+                    <a class="btn dropdown_btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Roles
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Administrator</a></li>
+                        <li><a class="dropdown-item" href="#">Inventory clerk</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
 
             <div class="mt-5 text-center">
                 <button type="submit " class="btn btn-outline-light ">Add User!</button>
             </div>
         </form>
     </div>
+    <script>
+
+        var loadFile = function(event){
+            var output = document.getElementById('output');
+            output.src = URL.createObjectURL(event.target.files[0]);
+        };
+
+    </script>
 
 @endsection
