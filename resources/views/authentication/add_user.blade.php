@@ -13,13 +13,22 @@
             <div class="mb-3 label_container">
                 <input type="text" class="form-control" placeholder="First name">
             </div>
+            <div class="mb-3 label_container">
+                <p class="text-danger">*Validation error message here</p>
+            </div>
 
             <div class="mb-3 label_container">
                 <input type="text" class="form-control" placeholder="Last name">
             </div>
+            <div class="mb-3 label_container">
+                <p class="text-danger">*Validation error message here</p>
+            </div>
 
             <div class="mb-3 label_container">
                 <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="mb-3 label_container">
+                <p class="text-danger">*Validation error message here</p>
             </div>
 
             <div class="mb-3 text-center">
