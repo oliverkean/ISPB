@@ -23,6 +23,7 @@
             <div class="nav-item dashboard_links">
                 <a href="" class="nav-link">orders</a>
                 <a href="{{route('products-list.index')}}" class="nav-link">products</a>
+                <a href="{{route('users-list.index')}}" class="nav-link">Users list</a>
                 <a href="{{route('add-users.index')}}" class="nav-link">Add users</a>
                 <a href="" class="nav-link">logout</a>
             </div>

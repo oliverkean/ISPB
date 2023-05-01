@@ -9,7 +9,7 @@
         <div class="card main_container p-2">
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center">ITEMs</h2>
+                    <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg text-white" style="text-align: center">ITEMS</h2>
                     <div class="col d-flex justify-content-end">
                         <button type="button" class="btn btn-success my-3" style="width: 80px;">Add</button>
                     </div>

@@ -2,9 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     font-family: 'system-ui';
-}
 
-.welcome_cont{
     background-image: url('../images/welcome_background.jpg');
 
     background-size: cover;
@@ -12,6 +10,8 @@ body{
 
     height: 100vh;
 }
+
+
 
 
 .welcome_title_container{
