@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('../images/user_list_background.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.search-icon{
+    font-size: 20px;
+}
+
+.edit_btn{
+    background-color: #666666;
+    color: white;
+}
+
+.delete_btn{
+    background-color: #383838;
+    color: white;
+}
+
+.edit_btn:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.delete_btn:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.user_list_container{
+    background-color: hsl(0, 0%, 100%, .8);
+}

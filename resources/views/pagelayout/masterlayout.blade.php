@@ -12,10 +12,10 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
+    <nav class="navbar p-3 navbar-expand-lg bg-body-tertiary @yield('nav-color')">
         <div class="container-fluid justify-content-space-between ">
-            <div class="nav-item">
-                <a class="navbar-brand text-white" href="{{url('/')}}">ISPB</a>
+            <div class="nav-item ">
+                <a class="navbar-brand text-white logo" href="{{url('/')}}">ISPB</a>
             </div>
 
             <div class="nav-item">

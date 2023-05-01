@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+
+
+
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+.login-icon{
+    font-size: 80px;
+}
+
+.login_card{
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 100%, 0.6);
+    color: black;
+}
