@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="@yield('css')">
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-warning">
         <div class="container-fluid justify-content-space-between ">
             <div class="nav-item">
-                <a class="navbar-brand text-white" href="{{url('/')}}">ISPB</a>
+                <a class="navbar-brand text-white" href="{{route('dashboard.index')}}">PROFILE</a>
             </div>
 
-            <div class="nav-item">
-                <a href="{{route('authenticate.index')}}" class="nav-link text-white">Login</a>
+            <div class="nav-item dashboard_links">
+                <a href="" class="nav-link">orders</a>
+                <a href="" class="nav-link">products</a>
+                <a href="" class="nav-link">Users</a>
+                <a href="" class="nav-link">logout</a>
             </div>
             
         </div>
