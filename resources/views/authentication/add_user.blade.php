@@ -6,7 +6,11 @@
 @section('content')
     <div class="container form_container">
         <form action="" class="form" method="POST" enctype="multipart/form-data">
-            <img src="{{ asset('images/cat_default.jpg') }}" class="rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px">
+            <div class="form-item mb-5 profile_pic">
+
+                <img src="{{ asset('images/cat_default.jpg') }}" class=" image_pic rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px">
+                <h3 class="text-white">Profile picture</h3>
+            </div>
 
             <div class="input-group mb-3">
                 <input type="file" class="form-control" id="inputGroupFile02" onchange="loadFile(event)">
