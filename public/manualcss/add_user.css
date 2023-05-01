@@ -4,22 +4,23 @@ body{
     background-image: url(../images/add_user_background.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .user_icon{
-    font-size: 80px;
+    font-size: 90px;
 }
 
 .form_container{
     margin-top: 50px;
     background-color: #313131;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
     border-radius: 20px;
     width: max-content;
     min-width: 40%;
 }
 .form{
-    padding: 3em;
+    padding: 1.5em;
 }
 .form_container input{
     width: 70%;

@@ -1,17 +1,18 @@
 @extends('pagelayout.dashboard_layout')
 @section('title', 'Products List')
 
+@section('css', 'manualcss/products.css')
 
 @section('content')
 
-    <div class="container mx-auto m-5" style="max-width: 80%; margin-top: 50px;">
-        <div class="card border-dark p-2">
+    <div class="container-fluid mx-auto m-5 " >
+        <div class="card main_container p-2">
             <!---------------------------------------------SEARCH--------------------------------------------->
-            <div class="card border-dark my-3 bg-light">
+            <div class="container">
                 <form class="d-flex m-3 form-floating">
-                    <input class="form-control me-2 border-dark" type="search" placeholder="Search" aria-label="Search">
-                    <label for="Password"><i class="bi bi-search"></i> Search</label>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+                    <label for="search"><i class="bi bi-search"></i> Search</label>
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search search-icon"></i></button>
                 </form>
             </div>
 
@@ -22,39 +23,66 @@
 
             <!---------------------------------------------CARDS--------------------------------------------->
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card border-success">
-                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+                <div class="col ">
+                    <div class="card item-card">
+                        <div class="container_item">
+                                <!--Default pic here-->
+                        </div>
+                    
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
+                    <div class="card-footer">
+                        <div class="btn btn-success">Update</div>
+                        <div class="btn btn-danger">Delete</div>
+                    </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card border-success">
-                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+
+                <div class="col ">
+                    <div class="card item-card">
+                        <div class="container_item">
+                            <!--Default pic here-->
+                        </div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
+                    <div class="card-footer">
+                        <div class="btn btn-success">Update</div>
+                        <div class="btn btn-danger">Delete</div>
+                    </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card border-success">
-                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+                <div class="col ">
+                    <div class="card item-card">
+                        <div class="container_item">
+                            <!--Default pic here-->
+                        </div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                     </div>
+                    <div class="card-footer">
+                        <div class="btn btn-success">Update</div>
+                        <div class="btn btn-danger">Delete</div>
+                    </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card border-success">
-                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+
+                <div class="col ">
+                    <div class="card item-card">
+                        <div class="container_item">
+                            <!--Default pic here-->
+                        </div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="btn btn-success">Update</div>
+                        <div class="btn btn-danger">Delete</div>
                     </div>
                     </div>
                 </div>

@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(../images/snow-1890653.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main_container{
+    background-color: hsl(0, 0%, 27%, .7);
+}
+
+.item-card{
+    border-radius: 20px;
+}
+
+.container_item{
+    background-image: url(../images/cat_default.jpg);
+    background-size: cover;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.search-icon{
+    font-size: 20px;
+}
