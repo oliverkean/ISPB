@@ -4,8 +4,9 @@
 @section('css', 'manualcss/dashboard.css')
 @section('content')
     <div class="container box_container">
-       <div class="  box side">
-            
+       <div class="  box side text-center">
+            <H1> Total Sales!</H1>
+            <h2>Php: 6000</h2>
        </div>
        <div class=" box first">
         <div class="title">
@@ -96,9 +97,16 @@
     
     </div>
 
-    <div class="container on-demand">
-        <div class="container">
-            
+    <div class="container report">
+        <h1 class="report-title">GENERATE REPORTS</h1>
+        <div class="container inner_report">
+            <div class="container  sales_report">
+                <button type="submit" class="btn sales_btn btn-dark">Generate Sales report</button>
+            </div>
+            <div class="container inventory_report">
+                <button type="submit" class="btn inv_btn btn-dark">Generate Inventory report</button>
+            </div>
         </div>
+        
     </div>
 @endsection
