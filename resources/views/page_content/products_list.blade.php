@@ -31,7 +31,7 @@
                         <label for="search"><i class="bi bi-search"></i> Search</label>
                         <button class="btn btn-outline-light" type="submit"><i class="bi bi-search search-icon"></i></button>
                     </form>
-                    <p class="text-danger">&nbsp;&nbsp;&nbsp;No result was found</p>
+                    <p class="text-warning" style="font-family:Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;No result was found</p>
                 </div>
 
                 <!---------------------------------------------CARDS--------------------------------------------->

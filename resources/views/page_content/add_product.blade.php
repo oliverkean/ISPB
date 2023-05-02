@@ -19,27 +19,27 @@
                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
                 <span class="text-danger">@error('ProductImage') {{$message}} @enderror</span>
             </div>
-            <p class="text-danger">Validation error message here</p>
+            <p class="text-warning">Validation error message here</p>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="ProductName" id="ProductName" value="{{old('ProductName')}}" placeholder="ProductName">
                 <label for="ProductName">ProductName</label>
                 <span class="text-danger">@error('ProductName') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
             
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Description" id="Description" value="{{old('Description')}}" placeholder="Description">
                 <label for="Description">Description</label>
                 <span class="text-danger">@error('Description') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Quantity" id="Quantity" value="{{old('Quantity')}}" placeholder="Quantity">
                 <label for="Quantity">Quantity</label>
                 <span class="text-danger">@error('Quantity') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="row justify-content-center">

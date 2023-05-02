@@ -12,21 +12,21 @@
                 <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
                 <label for="Itemname">Item Name</label>
                 <span class="text-danger">@error('Itemname') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
             
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Orderquantity" id="Orderquantity" value="{{old('Orderquantity')}}" placeholder="Orderquantity">
                 <label for="Orderquantity">Order Quantity</label>
                 <span class="text-danger">@error('Orderquantity') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="form-floating mb-3">
                 <input type="date" class="form-control" name="Orderdate" id="Orderdate" value="{{old('Orderdate')}}" placeholder="Orderdate">
                 <label for="Orderdate">Order Date</label>
                 <span class="text-danger">@error('Orderdate') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="row justify-content-center">

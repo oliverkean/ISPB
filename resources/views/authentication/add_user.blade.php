@@ -17,41 +17,41 @@
                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
                 <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
             </div>
-            <p class="text-danger">Validation error message here</p>
+            <p class="text-warning">Validation error message here</p>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Firstname" id="Firstname" value="{{old('Firstname')}}" placeholder="Firstname">
                 <label for="Firstname">Firstname</label>
                 <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
             
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Middlename" id="Middlename" value="{{old('Middlename')}}" placeholder="Middlename">
                 <label for="Middlename">Middlename</label>
                 <span class="text-danger">@error('Middlename') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Lastname" id="Lastname" value="{{old('Lastname')}}" placeholder="Lastname">
                 <label for="Lastname">Lastname</label>
                 <span class="text-danger">@error('Lastname') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="form-floating mb-3">
                 <input type="password" class="form-control" name="Password" id="Password" value="{{old('Password')}}" placeholder="Password">
                 <label for="Password">Password</label>
                 <span class="text-danger">@error('Password') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="form-floating mb-3">
                 <input type="date" class="form-control" name="Birthdate" id="Birthdate" value="{{old('Birthdate')}}" placeholder="Birthdate">
                 <label for="Birthdate">Birthdate</label>
                 <span class="text-danger">@error('Birthdate') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="row justify-content-center">
