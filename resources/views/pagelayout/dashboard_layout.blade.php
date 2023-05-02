@@ -22,11 +22,11 @@
             </div>
 
             <div class="nav-item dashboard_links">
-                <a href="{{route('orders.index')}}" class="nav-link">orders</a>
-                <a href="{{route('products-list.index')}}" class="nav-link">products</a>
-                <a href="{{route('users-list.index')}}" class="nav-link">Users list</a>
-                <a href="{{route('add-users.index')}}" class="nav-link">Add users</a>
-                <a href="" class="nav-link">logout</a>
+                <a href="{{route('users-list.index')}}" class="nav-link">Users</a>
+                <a href="{{route('products-list.index')}}" class="nav-link">Products</a>
+                <a href="{{route('orders.index')}}" class="nav-link">Orders</a>
+                <a href="{{route('profile.index')}}" class="nav-link">Profile</a>
+                <a href="" class="nav-link">Logout</a>
             </div>
             
         </div>

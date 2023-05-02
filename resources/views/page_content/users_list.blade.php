@@ -10,7 +10,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-people-fill"></i>USERS</h2>
                     <div class="col d-flex justify-content-end">
-                        <button type="button" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Users</button>
+                        <a href="{{route('add-users.index')}}" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Users</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                                                             </div>
 
                                                             <div class="mt-5 text-center">
-                                                                <button type="submit " class="btn btn-outline-light ">Add User!</button>
+                                                                <button type="submit " class="btn btn-outline-light ">Save Changes</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -146,7 +146,6 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
                                                     </div>
                                                 </div>
                                             </div>

@@ -6,6 +6,8 @@
 @section('content')
     <div class="container form_container">
         <form action="" class="form" method="POST" enctype="multipart/form-data">
+            <h3 class="text-white">Add Order</h3>
+
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
                 <label for="Itemname">Item Name</label>

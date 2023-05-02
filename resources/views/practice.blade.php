@@ -116,3 +116,15 @@
 </div>
 
 @endsection
+
+<li class="nav-item dropdown nav-link m-0">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Users
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-dark nav-link" href="#">User List</a></li>
+                        <li><a class="dropdown-item text-dark nav-link" href="#">Add User</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-dark nav-link" href="#">Something else here</a></li>
+                    </ul>
+                </li>
