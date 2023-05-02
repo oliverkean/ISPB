@@ -6,6 +6,14 @@
 @section('content')
 
     <div class="container-fluid mx-auto m-5 " >
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> Product/Item added succesfully!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Failure!</strong> Sorry, something went wrong!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         <div class="card main_container p-2">
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center">
@@ -23,6 +31,7 @@
                         <label for="search"><i class="bi bi-search"></i> Search</label>
                         <button class="btn btn-outline-light" type="submit"><i class="bi bi-search search-icon"></i></button>
                     </form>
+                    <p class="text-danger">&nbsp;&nbsp;&nbsp;No result was found</p>
                 </div>
 
                 <!---------------------------------------------CARDS--------------------------------------------->
