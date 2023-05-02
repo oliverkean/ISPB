@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(../images/sunlight-478249.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.user_icon{
+    font-size: 90px;
+}
+
+.form_container{
+    margin-top: 50px;
+    background-color: hsl(0, 0%, 19%, .8);
+    margin-bottom: 1.5em;
+    border-radius: 20px;
+    width: max-content;
+    min-width: 40%;
+}
+.form{
+    padding: 1.5em;
+}
+.form_container input{
+    width: 100%;
+    margin: 0;
+
+    
+}
+
+.label_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.dropdown_btn{
+    background-color: #818181;
+    color: white;
+}
+
+.profile_pic{
+    border-radius: 20px;
+    
+    width: max-content;
+    margin: auto;
+}
+
+.image_pic{
+    outline: 5px solid #fefefe;
+}

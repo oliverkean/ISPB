@@ -9,7 +9,7 @@
             <div class="form-item mb-5 profile_pic">
 
                 <img src="{{ asset('images/cat_default.jpg') }}" class=" image_pic rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px">
-                <h3 class="text-white">Profile picture</h3>
+                <h3 class="text-white">Add New User</h3>
             </div>
 
             <div class="input-group">

@@ -1,12 +1,12 @@
 @extends('pagelayout.dashboard_layout')
 @section('title', 'Add Orders')
 
-@section('css', 'manualcss/add_user.css')
+@section('css', 'manualcss/add_order.css')
 
 @section('content')
     <div class="container form_container">
         <form action="" class="form" method="POST" enctype="multipart/form-data">
-            <h3 class="text-white">Add Order</h3>
+            <h3 class="text-white"><i class="bi bi-cart-plus"></i>Add Order</h3>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
@@ -19,13 +19,6 @@
                 <input type="text" class="form-control" name="Orderquantity" id="Orderquantity" value="{{old('Orderquantity')}}" placeholder="Orderquantity">
                 <label for="Orderquantity">Order Quantity</label>
                 <span class="text-danger">@error('Orderquantity') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
-            </div>
-
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="Orderstatus" id="Orderstatus" value="{{old('Orderstatus')}}" placeholder="Orderstatus">
-                <label for="Orderstatus">Order Status</label>
-                <span class="text-danger">@error('Orderstatus') {{$message}} @enderror</span>
                 <p class="text-danger">Validation error message here</p>
             </div>
 

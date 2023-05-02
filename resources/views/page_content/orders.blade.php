@@ -78,13 +78,6 @@
                                                                 </div>
 
                                                                 <div class="form-floating mb-3">
-                                                                    <input type="text" class="form-control" name="Orderstatus" id="Orderstatus" value="{{old('Orderstatus')}}" placeholder="Orderstatus">
-                                                                    <label for="Orderstatus">Order Status</label>
-                                                                    <span class="text-danger">@error('Orderstatus') {{$message}} @enderror</span>
-                                                                    <p class="text-danger">Validation error message here</p>
-                                                                </div>
-
-                                                                <div class="form-floating mb-3">
                                                                     <input type="date" class="form-control" name="Orderdate" id="Orderdate" value="{{old('Orderdate')}}" placeholder="Orderdate">
                                                                     <label for="Orderdate">Order Date</label>
                                                                     <span class="text-danger">@error('Orderdate') {{$message}} @enderror</span>

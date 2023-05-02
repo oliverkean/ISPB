@@ -45,7 +45,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Edit User Information</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Edit Product Information</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -102,9 +102,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="mt-5 text-center">
-                                                    <button type="submit " class="btn btn-outline-light ">Add Product!</button>
-                                                </div>
+
                                             </form>
                                         </div>
                                         <script>
@@ -117,6 +115,7 @@
                                         </script>
                                         </div>
                                         <div class="modal-footer">
+                                            <button type="submit " class="btn btn-outline-dark ">Save changes!</button>
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
