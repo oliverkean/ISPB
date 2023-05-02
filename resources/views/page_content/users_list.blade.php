@@ -8,7 +8,7 @@
         <div class="card bp-2 user_list_container" >
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center">USER's TABLE</h2>
+                    <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-people-fill"></i>USERS</h2>
                     <div class="col d-flex justify-content-end">
                         <button type="button" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Users</button>
                     </div>
@@ -44,23 +44,23 @@
                                 <td>2444666668888888</td>
                                 <td>
                                     <div class="btn-group g-4 btn_action" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pen pen_icon"></i></button>
+                                        <button type="button" class="btn edit_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pen pen_icon"></i></button>
 
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit User Information</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
                                                     <div class="container form_container">
                                                         <form action="" class="form" method="POST" enctype="multipart/form-data">
-                                                            <div class="form-item mb-5 profile_pic">
+                                                            <div class="form-item mb-5 profile_pic" >
 
-                                                                <img src="{{ asset('images/cat_default.jpg') }}" class=" image_pic rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px">
-                                                                <h3 class="text-white">Profile picture</h3>
+                                                                <img src="{{ asset('images/cat_default.jpg') }}" class=" image_pic rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px" style="border: 3px solid rgb(43, 43, 43)">
+                                                                <h3 class="text-dark">Profile</h3>
                                                             </div>
 
                                                             <div class="input-group mb-3">
@@ -106,7 +106,7 @@
                                                             <div class="row justify-content-center">
                                                                 <div class="col-sm-6 text-center mb-3">
                                                                     <div class="dropdown">
-                                                                    <a class="btn dropdown_btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                         Gender
                                                                     </a>
                                                                     <ul class="dropdown-menu">
@@ -119,7 +119,7 @@
 
                                                                 <div class="col-sm-6 text-center mb-3">
                                                                     <div class="dropdown">
-                                                                    <a class="btn dropdown_btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                         Roles
                                                                     </a>
                                                                     <ul class="dropdown-menu">

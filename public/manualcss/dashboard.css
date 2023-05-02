@@ -1,6 +1,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 
 
@@ -58,3 +59,10 @@ body{
     flex-direction: row;
 }
 
+
+footer{
+    margin-top: 5em;
+    background-color: #434343;
+    padding: 1.4em;
+    color: white;
+}
