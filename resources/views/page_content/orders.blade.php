@@ -8,7 +8,7 @@
         <div class="card bp-2 orders_container" >
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center">ORDER's TABLE</h2>
+                    <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>ORDERS</h2>
                     <div class="col d-flex justify-content-end">
                         <button type="button" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Orders</button>
                     </div>
