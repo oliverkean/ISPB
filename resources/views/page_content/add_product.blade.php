@@ -6,6 +6,8 @@
 @section('content')
     <div class="container form_container">
         <form action="" class="form" method="POST" enctype="multipart/form-data">
+            <h3 class="text-white">Add Product</h3>
+
             <div class="form-item mb-5 profile_pic">
 
                 <img src="{{ asset('images/cat_default.jpg') }}" class=" image_pic rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px">

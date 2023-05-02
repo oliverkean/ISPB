@@ -6,6 +6,7 @@
 @section('content')
     <div class="container form_container">
         <form action="" class="form" method="POST" enctype="multipart/form-data">
+            <h3 class="text-white">Add Category</h3>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="CategoryCode" id="CategoryCode" value="{{old('CategoryCode')}}" placeholder="CategoryCode">

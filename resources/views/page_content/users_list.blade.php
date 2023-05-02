@@ -131,7 +131,7 @@
                                                             </div>
 
                                                             <div class="mt-5 text-center">
-                                                                <button type="submit " class="btn btn-outline-light ">Add User!</button>
+                                                                <button type="submit " class="btn btn-outline-light ">Save Changes</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -146,7 +146,6 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
                                                     </div>
                                                 </div>
                                             </div>
