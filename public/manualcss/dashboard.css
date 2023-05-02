@@ -66,3 +66,61 @@ footer{
     padding: 1.4em;
     color: white;
 }
+
+.inner_report{
+    background-color: #e3e3e3;
+    box-shadow: 0 2px 3px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.report-title{
+    color: black;
+    padding: 1.4em;
+}
+
+.report-title:hover{
+    transform: translateY(-4px);
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+
+}
+
+.report{
+    background-color: #c8c8c8;
+    
+    border-radius: 20px;
+    margin-top: 10em;
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+
+
+
+}
+
+.report .container{
+    max-width: max-content;
+}
+
+.sales_btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 2px #63d87c;
+    transform: translateY(-4px);
+    transition: all ease-in-out 200ms;
+
+}
+
+.inv_btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 2px #fc5656;
+    transform: translateY(-4px);
+    transition: all ease-in-out 200ms;
+
+}
