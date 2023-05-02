@@ -121,7 +121,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn btn-danger"><i class="bi bi-trash3-fill"></i> Delete</div>
+                            <div class="btn btn-danger" onclick="return confirm('Sure Want Delete?')"><i class="bi bi-trash3-fill"></i> Delete</div>
                         </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="btn btn-outline-dark"><i class="bi bi-pencil-square"></i> Update</div>
-                            <div class="btn btn-danger"><i class="bi bi-trash3-fill"></i>Delete</div>
+                            <div class="btn btn-danger" onclick="return confirm('Sure Want Delete?')"><i class="bi bi-trash3-fill"></i>Delete</div>
                         </div>
                         </div>
                     </div>
@@ -152,7 +152,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="btn btn-outline-dark"><i class="bi bi-pencil-square"></i> Update</div>
-                            <div class="btn btn-danger"><i class="bi bi-trash3-fill"></i>Delete</div>
+                            <div class="btn btn-danger" onclick="return confirm('Sure Want Delete?')"><i class="bi bi-trash3-fill"></i>Delete</div>
                         </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="card-footer ">
                             <div class="btn btn-outline-dark"><i class="bi bi-pencil-square"></i> Update</div>
-                            <div class="btn btn-danger"><i class="bi bi-trash3-fill"></i>Delete</div>
+                            <div class="btn btn-danger" onclick="return confirm('Sure Want Delete?')"><i class="bi bi-trash3-fill"></i>Delete</div>
                         </div>
                         </div>
                     </div>
