@@ -107,6 +107,7 @@
                 <button type="submit" class="btn inv_btn btn-dark">Generate Inventory report</button>
             </div>
         </div>
-        
     </div>
+
+    <br><br><br><br><br><br>
 @endsection
