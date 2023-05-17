@@ -183,9 +183,9 @@
                 <div class="card bp-2 orders_container" >
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>PENDING ORDERS to SUPPLIER</h2>
+                            <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>ORDERS to SUPPLIER</h2>
                             <div class="col d-flex justify-content-end">
-                                <a href="{{route('add-orders.index')}}" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Orders</a>
+                                <a href="" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Orders</a>
                             </div>
                         </div>
                     </div>
@@ -209,6 +209,7 @@
                                         <th>Item</th>
                                         <th>Order Quantity</th>
                                         <th>Order Date</th>
+                                        <th>Price</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -218,16 +219,17 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
+                                        <td></td>
                                         <td>
                                             <div class="btn-group g-4 btn_action" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn edit_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pen pen_icon"></i></button>
+                                                <button type="button" class="btn edit_btn" data-bs-toggle="modal" data-bs-target="#examplesModal"><i class="bi bi-pen pen_icon"></i></button>
 
                                                 <!-- Modal -->
-                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="examplesModal" tabindex="-1" aria-labelledby="examplesModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">Edit Order Information</h5>
+                                                                <h5 class="modal-title" id="examplesModalLabel">Edit Order Information</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
@@ -252,6 +254,13 @@
                                                                         <div class="form-floating mb-3">
                                                                             <input type="text" class="form-control" name="Orderquantity" id="Orderquantity" value="{{old('Orderquantity')}}" placeholder="Orderquantity">
                                                                             <label for="Orderquantity">Order Quantity</label>
+                                                                            <span class="text-danger">@error('Orderquantity') {{$message}} @enderror</span>
+                                                                            <p class="text-danger">Validation error message here</p>
+                                                                        </div>
+
+                                                                        <div class="form-floating mb-3">
+                                                                            <input type="number" class="form-control" name="Orderquantity" id="Orderquantity" value="{{old('Orderquantity')}}" placeholder="Orderquantity">
+                                                                            <label for="Orderquantity">Price</label>
                                                                             <span class="text-danger">@error('Orderquantity') {{$message}} @enderror</span>
                                                                             <p class="text-danger">Validation error message here</p>
                                                                         </div>

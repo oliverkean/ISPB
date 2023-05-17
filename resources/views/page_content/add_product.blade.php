@@ -46,14 +46,14 @@
                 <input type="number" class="form-control" name="KiloPrice" id="KiloPrice" value="{{old('KiloPrice')}}" placeholder="KiloPrice">
                 <label for="KiloPrice">Price per Kilo</label>
                 <span class="text-danger">@error('Quantity') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="form-floating mb-3">
                 <input type="number" class="form-control" name="SackPrice" id="SackPrice" value="{{old('SackPrice')}}" placeholder="SackPrice">
                 <label for="SackPrice">Price per Sack</label>
                 <span class="text-danger">@error('Quantity') {{$message}} @enderror</span>
-                <p class="text-danger">Validation error message here</p>
+                <p class="text-warning">Validation error message here</p>
             </div>
 
             <div class="row justify-content-center">
