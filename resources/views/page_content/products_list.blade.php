@@ -44,14 +44,17 @@
 
                 <!---------------------------------------------CARDS--------------------------------------------->
                 <div class="mt-5 row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col ">
+                    <div class="col card-container">
                         <div class="card item-card">
                             <div class="container_item">
                                     <!--Default pic here-->
                             </div>
                         
                         <div class="card-body">
-                            <h5 class="card-title">Product title</h5>
+                            <div class="card-header mb-3">
+
+                                <h5 class="card-title">PRODUCT NAME</h5>
+                            </div>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <p>Current Stock: 26</p>
                             <p>Price per Kilo: 40</p>
@@ -72,13 +75,16 @@
                         </div>
                     </div>
 
-                    <div class="col ">
+                    <div class="col card-container">
                         <div class="card item-card">
                             <div class="container_item">
                                 <!--Default pic here-->
                             </div>
                         <div class="card-body">
-                            <h5 class="card-title">Product title</h5>
+                            <div class="card-header mb-3">
+
+                                <h5 class="card-title">PRODUCT NAME</h5>
+                            </div>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <p>Current Stock: 26</p>
                             <p>Price per Kilo: 40</p>
@@ -90,14 +96,17 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col ">
+                    <div class="col card-container">
                         <div class="card item-card">
                             <div class="container_item">
                                 <!--Default pic here-->
                             </div>
                         <div class="card-body">
-                            <h5 class="card-title">Product title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            <div class="card-header mb-3">
+
+                                <h5 class="card-title">PRODUCT NAME</h5>
+                            </div>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <p>Current Stock: 26</p>
                             <p>Price per Kilo: 40</p>
                             <p>Price per Sack: 2000</p>
@@ -109,13 +118,16 @@
                         </div>
                     </div>
 
-                    <div class="col ">
+                    <div class="col card-container">
                         <div class="card item-card">
                             <div class="container_item">
                                 <!--Default pic here-->
                             </div>
                         <div class="card-body">
-                            <h5 class="card-title">Product title</h5>
+                            <div class="card-header mb-3">
+
+                                <h5 class="card-title">PRODUCT NAME</h5>
+                            </div>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <p>Current Stock: 26</p>
                             <p>Price per Kilo: 40</p>
