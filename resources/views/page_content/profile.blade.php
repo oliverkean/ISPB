@@ -5,6 +5,7 @@
 @section('content')
 
 @include('modal.Change_password_modal')
+@include('modal.Edit_Profile')
             <div class="container  mt-5">
                 <div class="container container_pic_info">
                     <div class="container  pic_container ">
@@ -31,11 +32,15 @@
                             <h6>Role: Inventory Clerk</h6>
                             <h6>Email: Faker@gmail.com</h6>
                             <h6>Contact Number: 0915 544 3568</h6>
+                            <h6>Birth Date: January 1, 2001</h6>
                         </div>
 
                         <div class="card-footer">
                             
                             <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#examplesModal">
+                                Edit Profile
+                            </button>
                             <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Change Password
                             </button>
