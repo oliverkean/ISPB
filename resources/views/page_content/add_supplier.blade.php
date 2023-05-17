@@ -18,7 +18,7 @@
             </div>
             
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="Description" id="Description" value="{{old('Description')}}" placeholder="Description">
+                <input type="number" class="form-control" name="Description" id="Description" value="{{old('Description')}}" placeholder="Description">
                 <label for="Description">Contact</label>
                 <span class="text-danger">@error('Description') {{$message}} @enderror</span>
                 <p class="text-warning">Validation error message here</p>
