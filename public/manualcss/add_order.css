@@ -9,6 +9,14 @@ body{
     background-color: black;
 }
 
+.drop_down_btn{
+    background-color: rgb(56, 32, 32);
+    color: white;
+}
+.drop_down_btn:hover{
+    background-color: rgb(114, 79, 79);
+    color: cyan;
+}
 .user_icon{
     font-size: 90px;
 }
