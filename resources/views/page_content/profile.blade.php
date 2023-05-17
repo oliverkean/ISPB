@@ -16,14 +16,14 @@
 
             <div class="card-body">
                 <div class="d-flex position-relative">
-                    <img src="https://via.placeholder.com/200x200" class="flex-shrink-0 me-3" style="max-width: 200px; max-height: 200px;" alt="...">
+                    <img src="{{ asset('images/faker.webp') }}" class="flex-shrink-0 me-3" style="max-width: 200px; max-height: 200px;" alt="...">
                     <div>
-                        <h4 class="mt-0">Name Here</h4>
-                        <p>info here</p>
-                        <p>info here</p>
-                        <p>info here</p>
-                        <p>info here</p>
-                        <p>info here</p>
+                        <h4 class="mt-0">User Info</h4>
+                        Name: <p>Lee Sang-hyeok (이상혁)</p>
+                        Country of Birth: <p>South Korea</p>
+                        Birthday: <p>May 7, 1996 (age 26)</p>
+                        Residence: <p>Korea</p>
+                        Team <p>T1</p>
                     </div>
                 </div>
             </div>
