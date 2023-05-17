@@ -1,13 +1,18 @@
 @extends('pagelayout.dashboard_layout')
 @section('title', 'Profile Page')
+@section('css', 'manualcss/profile.css')
 
 @section('content')
 
-    <div class="container mx-auto m-5" style="max-width: 60%; margin-top: 50px;" alt="User Profile Image">
-        <div class="card border-dark p-2">
-            <div class="card-body">
-                <div class="d-flex position-relative">
-                    <img src="{{ asset('images/faker.webp') }}" class="flex-shrink-0 me-3 my-auto border border-secondary border-2 rounded-circle" style="max-width: 200px; max-height: 200px;" alt="...">
+ 
+            <div class="container  mt-5">
+                <div class="container container_pic_info">
+                    <div class="pic_container">
+
+                        <div class="profile_pic">
+    
+                        </div>
+                    </div>
                     <div>
                         <h6>Lee Sang-hyeok (이상혁)</h6>
                         <h6>South Korea</h6>
@@ -17,7 +22,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+     
 
 @endsection

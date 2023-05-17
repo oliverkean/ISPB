@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+
+}
+
+
+.container_pic_info{
+    padding: 3em;
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    gap: 3em;
+
+}
+
+.pic_container{
+}
+
+.container_pic_info div{
+    background-color: white;
+    padding: 1.3em;
+    border-radius: 20px;
+
+}
+
+.container_pic_info .profile_pic{
+    background-image: url('../images/faker.webp');
+    height: 200px;
+    width: 300px;
+    background-position: center;
+    background-size: contain;
+    
+    border-radius: 200px;
+}
