@@ -7,10 +7,18 @@
 @include('modal.Change_password_modal')
             <div class="container  mt-5">
                 <div class="container container_pic_info">
-                    <div class="pic_container">
+                    <div class="container pic_container ">
 
                         <div class="profile_pic">
     
+                        </div>
+                        <div class="container">
+
+                            <form action="" class="d-flex"  method="post">
+                                <input type="file" name="" id="" >
+                                <button type="button" class="btn btn-dark">Upload</button>
+    
+                            </form>
                         </div>
                     </div>
                     <div>

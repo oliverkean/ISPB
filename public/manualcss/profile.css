@@ -1,11 +1,12 @@
 body{
     background-color: rgb(71, 69, 69);
+    box-sizing: border-box;
+    margin: 0;
 
 }
 
 
 .container_pic_info{
-    padding: 3em;
     display: grid;
 
     grid-template-columns: 1fr 2fr;
@@ -15,6 +16,9 @@ body{
 
 .pic_container{
     display: flex;
+    flex-direction: column;
+    
+    gap: 2em;
     align-items: center;
 }
 
