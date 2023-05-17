@@ -321,7 +321,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>SUPPLIERS INFORMATION</h2>
                             <div class="col d-flex justify-content-end">
-                                <a href="{{route('add-orders.index')}}" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Suppliers</a>
+                                <a href="{{route('add-supplier.index')}}" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Suppliers</a>
                             </div>
                         </div>
                     </div>
