@@ -25,6 +25,7 @@
                 <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
                 <p class="text-warning">Validation error message here</p>
             </div>
+<<<<<<< HEAD
             
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Middlename" id="Middlename" value="{{old('Middlename')}}" placeholder="Middlename">
@@ -32,6 +33,8 @@
                 <span class="text-danger">@error('Middlename') {{$message}} @enderror</span>
                 <p class="text-warning">Validation error message here</p>
             </div>
+=======
+>>>>>>> 8d52753defd04a00c4db64a1e8ea8b0815a0d9a6
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Lastname" id="Lastname" value="{{old('Lastname')}}" placeholder="Lastname">
@@ -58,22 +61,10 @@
                 <div class="col-sm-6 text-center mb-3">
                     <div class="dropdown">
                     <a class="btn dropdown_btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Gender
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Male</a></li>
-                        <li><a class="dropdown-item" href="#">Female</a></li>
-                        <li><a class="dropdown-item" href="#">Spaceship</a></li>
-                    </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 text-center mb-3">
-                    <div class="dropdown">
-                    <a class="btn dropdown_btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Roles
                     </a>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Unicorn</a></li>
                         <li><a class="dropdown-item" href="#">Administrator</a></li>
                         <li><a class="dropdown-item" href="#">Inventory clerk</a></li>
                     </ul>
