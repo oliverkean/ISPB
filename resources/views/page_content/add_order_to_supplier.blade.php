@@ -20,8 +20,17 @@
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
-                <label for="Itemname">Item Name</label>
+
+                <div class="dropdown">
+                    <button class="btn drop_down_btn dropdown-toggle" style="width: 100%" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Product
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Bmeg</a></li>
+                      <li><a class="dropdown-item" href="#">Bmeg 1000</a></li>
+                      <li><a class="dropdown-item" href="#">Bmeg 2000</a></li>
+                    </ul>
+                  </div>
                 <span class="text-danger">@error('Itemname') {{$message}} @enderror</span>
                 <p class="text-warning">Validation error message here</p>
             </div>
