@@ -10,6 +10,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\AddOrderController;
 use App\Http\Controllers\AddProductController;
 use App\Http\Controllers\AddCategoryController;
+use App\Http\Controllers\OrderToSupplierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,4 +41,5 @@ Route::resource('orders', OrderController::class);
 Route::resource('add-orders', AddOrderController::class);
 Route::resource('add-products', AddProductController::class);
 Route::resource('add-categories', AddCategoryController::class);
+Route::resource('add-to-supplier', OrderToSupplierController::class);
 

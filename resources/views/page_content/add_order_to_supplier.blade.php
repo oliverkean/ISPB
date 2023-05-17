@@ -6,7 +6,18 @@
 @section('content')
     <div class="container form_container">
         <form action="" class="form" method="POST" enctype="multipart/form-data">
-            <h3 class="text-white"><i class="bi bi-cart-plus"></i>Add Order</h3>
+            <div class="card-header mb-5">
+
+                <h3 class="text-white"><i class="bi bi-cart-plus"></i>ORDER TO SUPPLIER</h3>
+            </div>
+
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
+                <label for="Itemname">Supplier</label>
+                <span class="text-danger">@error('Itemname') {{$message}} @enderror</span>
+                <p class="text-warning">Validation error message here</p>
+            </div>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">

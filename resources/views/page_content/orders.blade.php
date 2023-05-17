@@ -6,11 +6,11 @@
 
     <div class="m-3">
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Customer Orders</button>
+        <li class="nav-item " role="presentation">
+            <button class="nav-link link_switch active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Customer Orders</button>
         </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pending Orders to Supplier</button>
+        <li class="nav-item " role="presentation">
+            <button class="nav-link link_switch " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pending Orders to Supplier</button>
         </li>
       
     </ul>
@@ -180,22 +180,22 @@
                     <strong>Failure!</strong> Sorry, something went wrong!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
-                <div class="card bp-2 orders_container" >
+                <div class="card bp-2  supplier_container" >
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>ORDERS to SUPPLIER</h2>
+                            <h3 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>ORDERS TO SUPPLIERS</h3>
                             <div class="col d-flex justify-content-end">
-                                <a href="" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Orders</a>
+                                <a href="{{route('add-to-supplier.index')}}" class="btn add_btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Orders</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
                         <!---------------------------------------------SEARCH--------------------------------------------->
-                        <div class="card  my-3 bg-light">
+                        <div class="card  my-3 search_container_supplier">
                             <form class="d-flex m-3 form-floating">
                                 <input class="form-control me-2 border-dark" type="search" placeholder="Search" aria-label="Search">
                                 <label for="Password"><i class="bi bi-search"></i> Search</label>
-                                <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search search-icon"></i></button>
+                                <button class="btn btn-light" type="submit"><i class="bi bi-search search-icon"></i></button>
                             </form>
                             <p class="text-danger">&nbsp;&nbsp;&nbsp;No result was found</p>
                         </div>
