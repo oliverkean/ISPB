@@ -16,7 +16,7 @@
         <div class="card bp-2 orders_container" >
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>ORDERS</h2>
+                    <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>CUSTOMER ORDERS</h2>
                     <div class="col d-flex justify-content-end">
                         <a href="{{route('add-orders.index')}}" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Orders</a>
                     </div>
@@ -38,7 +38,7 @@
                     <table class="table" style="text-align:center;">
                         <thead>
                             <tr>
-                                <th>OrderID</th>
+                                <th>Customer Name</th>
                                 <th>Item</th>
                                 <th>Order Quantity</th>
                                 <th>Order Status</th>

@@ -41,7 +41,7 @@
                                 <th>ID</th>
                                 <th>FirstName</th>
                                 <th>LastName</th>
-                                <th>Password</th>
+                                <th>Role</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -50,7 +50,7 @@
                                 <td>000001</td>
                                 <td>Vincent James</td>
                                 <td>Beato</td>
-                                <td>2444666668888888</td>
+                                <td>Super Administrator</td>
                                 <td>
                                     <div class="btn-group g-4 btn_action" role="group" aria-label="Basic example">
                                         <button type="button" class="btn edit_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pen pen_icon"></i></button>
@@ -83,13 +83,6 @@
                                                                 <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
                                                                 <p class="text-danger">Validation error message here</p>
                                                             </div>
-                                                            
-                                                            <div class="form-floating mb-3">
-                                                                <input type="text" class="form-control" name="Middlename" id="Middlename" value="{{old('Middlename')}}" placeholder="Middlename">
-                                                                <label for="Middlename">Middlename</label>
-                                                                <span class="text-danger">@error('Middlename') {{$message}} @enderror</span>
-                                                                <p class="text-danger">Validation error message here</p>
-                                                            </div>
 
                                                             <div class="form-floating mb-3">
                                                                 <input type="text" class="form-control" name="Lastname" id="Lastname" value="{{old('Lastname')}}" placeholder="Lastname">
@@ -113,19 +106,6 @@
                                                             </div>
 
                                                             <div class="row justify-content-center">
-                                                                <div class="col-sm-6 text-center mb-3">
-                                                                    <div class="dropdown">
-                                                                    <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        Gender
-                                                                    </a>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><a class="dropdown-item" href="#">Male</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Female</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Spaceship</a></li>
-                                                                    </ul>
-                                                                    </div>
-                                                                </div>
-
                                                                 <div class="col-sm-6 text-center mb-3">
                                                                     <div class="dropdown">
                                                                     <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -31,7 +31,7 @@
                         <label for="search"><i class="bi bi-search"></i> Search</label>
                         <button class="btn btn-outline-light" type="submit"><i class="bi bi-search search-icon"></i></button>
                     </form>
-                    <p class="text-danger">&nbsp;&nbsp;&nbsp;No result was found</p>
+                    <p class="text-warning">&nbsp;&nbsp;&nbsp;No result was found</p>
                 </div>
 
                 <!---------------------------------------------CARDS--------------------------------------------->
@@ -92,6 +92,20 @@
                                                 <div class="form-floating mb-3">
                                                     <input type="text" class="form-control" name="Quantity" id="Quantity" value="{{old('Quantity')}}" placeholder="Quantity">
                                                     <label for="Quantity">Quantity</label>
+                                                    <span class="text-danger">@error('Quantity') {{$message}} @enderror</span>
+                                                    <p class="text-danger">Validation error message here</p>
+                                                </div>
+
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" class="form-control" name="KiloPrice" id="KiloPrice" value="{{old('KiloPrice')}}" placeholder="KiloPrice">
+                                                    <label for="KiloPrice">Price per Kilo</label>
+                                                    <span class="text-danger">@error('Quantity') {{$message}} @enderror</span>
+                                                    <p class="text-danger">Validation error message here</p>
+                                                </div>
+
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" class="form-control" name="SackPrice" id="SackPrice" value="{{old('SackPrice')}}" placeholder="SackPrice">
+                                                    <label for="SackPrice">Price per Sack</label>
                                                     <span class="text-danger">@error('Quantity') {{$message}} @enderror</span>
                                                     <p class="text-danger">Validation error message here</p>
                                                 </div>
