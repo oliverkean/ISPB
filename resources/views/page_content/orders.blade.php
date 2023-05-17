@@ -10,9 +10,11 @@
             <button class="nav-link link_switch active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Customer Orders</button>
         </li>
         <li class="nav-item " role="presentation">
-            <button class="nav-link link_switch " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pending Orders to Supplier</button>
+            <button class="nav-link link_switch" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pending Orders to Supplier</button>
         </li>
-      
+        <li class="nav-item" role="presentation">
+            <button class="nav-link link_switch" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+        </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -77,13 +79,13 @@
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">Edit Order Information</h5>
+                                                                <h5 class="modal-title" id="exampleModalLabel">Edit Customer Order</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <div class="container form_container">
                                                                     <form action="" class="form" method="POST" enctype="multipart/form-data">
-                                                                        <h3 class="text-white">Add Customer Order</h3>
+                                                                        <h3 class="text-white">Update Customer Order</h3>
 
                                                                         <div class="form-floating mb-3">
                                                                             <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
@@ -135,7 +137,7 @@
                                                                         </div>
 
                                                                         <div class="mt-5 text-center">
-                                                                            <button type="submit " class="btn btn-outline-dark ">Add Order!</button>
+                                                                            <button type="submit " class="btn btn-outline-dark ">Update Customer Order!</button>
                                                                         </div>
                                                                     </form>
                                                                 </div>
@@ -168,10 +170,9 @@
         </div>
 
 
-        <!-- PROFILE DIV TAB---->
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
-        <div class="container-fluid mx-auto m-5">
+            <div class="container-fluid mx-auto m-5">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>Success!</strong> Order added succesfully!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -229,13 +230,13 @@
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="examplesModalLabel">Edit Order Information</h5>
+                                                                <h5 class="modal-title" id="examplesModalLabel">Edit Order</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <div class="container form_container">
                                                                     <form action="" class="form" method="POST" enctype="multipart/form-data">
-                                                                        <h3 class="text-white">Add Order to Supplier</h3>
+                                                                        <h3 class="text-white">Update Order to Supplier</h3>
 
                                                                         <div class="form-floating mb-3">
                                                                             <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
@@ -273,7 +274,7 @@
                                                                         </div>
 
                                                                         <div class="mt-5 text-center">
-                                                                            <button type="submit " class="btn btn-outline-dark ">Add Order!</button>
+                                                                            <button type="submit " class="btn btn-outline-dark ">Update Order!</button>
                                                                         </div>
                                                                     </form>
                                                                 </div>
@@ -304,7 +305,123 @@
             </div>
         
         </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+            <div class="container-fluid mx-auto m-5">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Success!</strong> Order added succesfully!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Failure!</strong> Sorry, something went wrong!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="card bp-2 orders_container" >
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>SUPPLIERS INFORMATION</h2>
+                            <div class="col d-flex justify-content-end">
+                                <a href="{{route('add-orders.index')}}" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Suppliers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!---------------------------------------------SEARCH--------------------------------------------->
+                        <div class="card  my-3 bg-light">
+                            <form class="d-flex m-3 form-floating">
+                                <input class="form-control me-2 border-dark" type="search" placeholder="Search" aria-label="Search">
+                                <label for="Password"><i class="bi bi-search"></i> Search</label>
+                                <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search search-icon"></i></button>
+                            </form>
+                            <p class="text-danger">&nbsp;&nbsp;&nbsp;No result was found</p>
+                        </div>
+
+                        <!---------------------------------------------TABLE--------------------------------------------->
+                        <div class="table-responsive">
+                            <table class="table" style="text-align:center;">
+                                <thead>
+                                    <tr>
+                                        <th>Supplier Name</th>
+                                        <th>Contact</th>
+                                        <th>Address</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="btn-group g-4 btn_action" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn edit_btn" data-bs-toggle="modal" data-bs-target="#examplezModal"><i class="bi bi-pen pen_icon"></i></button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="examplezModal" tabindex="-1" aria-labelledby="examplezModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="examplezModalLabel">Edit Supplier</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container form_container">
+                                                                    <form action="" class="form" method="POST" enctype="multipart/form-data">
+                                                                        <h3 class="text-white">Update Supplier Information</h3>
+
+                                                                        <div class="form-floating mb-3">
+                                                                            <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
+                                                                            <label for="Itemname">Supplier Name</label>
+                                                                            <span class="text-danger">@error('Itemname') {{$message}} @enderror</span>
+                                                                            <p class="text-danger">Validation error message here</p>
+                                                                        </div>
+
+                                                                        <div class="form-floating mb-3">
+                                                                            <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
+                                                                            <label for="Itemname">Contact</label>
+                                                                            <span class="text-danger">@error('Itemname') {{$message}} @enderror</span>
+                                                                            <p class="text-danger">Validation error message here</p>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-floating mb-3">
+                                                                            <input type="text" class="form-control" name="Orderquantity" id="Orderquantity" value="{{old('Orderquantity')}}" placeholder="Orderquantity">
+                                                                            <label for="Orderquantity">Address</label>
+                                                                            <span class="text-danger">@error('Orderquantity') {{$message}} @enderror</span>
+                                                                            <p class="text-danger">Validation error message here</p>
+                                                                        </div>
+
+                                                                        <div class="mt-5 text-center">
+                                                                            <button type="submit " class="btn btn-outline-dark ">Update Supplier!</button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <script>
+
+                                                                    var loadFile = function(event){
+                                                                        var output = document.getElementById('output');
+                                                                        output.src = URL.createObjectURL(event.target.files[0]);
+                                                                    };
+
+                                                                </script>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn delete_btn" onclick="return confirm('Sure Want Delete?')"><i class="bi bi-trash3-fill"></i></a></td>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     </div>
 
