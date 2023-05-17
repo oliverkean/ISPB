@@ -11,6 +11,10 @@
           <form action="" method="post">
             @csrf
             <div class="form-group">
+                <label for="" class="form-label">Username: </label>
+                <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
                 <label for="" class="form-label">Name: </label>
                 <input class="form-control" type="text">
             </div>
@@ -26,8 +30,6 @@
                 <label for="" class="form-label">Birth Date: </label>
                 <input type="date" class="form-control">
             </div>
-
-          
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

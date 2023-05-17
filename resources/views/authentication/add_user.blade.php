@@ -10,6 +10,12 @@
                 <i class="bi bi-person-add"></i>
            </div>
 
+           <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="Firstname" id="Firstname" value="{{old('Firstname')}}" placeholder="Firstname">
+                <label for="Firstname">Username</label>
+                <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
+                <p class="text-warning">Validation error message here</p>
+            </div>
           
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Firstname" id="Firstname" value="{{old('Firstname')}}" placeholder="Firstname">
