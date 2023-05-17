@@ -28,11 +28,11 @@
                         </div>
                         <div class="card-body">
 
-                            <h6>Name: Lee Sang-hyeok (이상혁)</h6>
-                            <h6>Role: Inventory Clerk</h6>
-                            <h6>Email: Faker@gmail.com</h6>
-                            <h6>Contact Number: 0915 544 3568</h6>
-                            <h6>Birth Date: January 1, 2001</h6>
+                            <h6>Name| Lee Sang-hyeok (이상혁)</h6>
+                            <h6>Role| Inventory Clerk</h6>
+                            <h6>Email| Faker@gmail.com</h6>
+                            <h6>Contact Number| 0915 544 3568</h6>
+                            <h6>Birth Date| January 1, 2001</h6>
                         </div>
 
                         <div class="card-footer">
