@@ -21,7 +21,7 @@
             
             <div class="container-fluid mx-auto m-5">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Success!</strong> Order added succesfully!
+                    <strong>Success!</strong> Customer Order added succesfully!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -174,7 +174,7 @@
 
             <div class="container-fluid mx-auto m-5">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Success!</strong> Order added succesfully!
+                    <strong>Success!</strong> Order To Supplier added succesfully!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -184,7 +184,7 @@
                 <div class="card bp-2  supplier_container" >
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h3 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>ORDERS TO SUPPLIERS</h3>
+                            <h3 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-file-earmark-arrow-up"></i>ORDERS TO SUPPLIERS</h3>
                             <div class="col d-flex justify-content-end">
                                 <a href="{{route('add-to-supplier.index')}}" class="btn add_btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Orders</a>
                             </div>
@@ -309,7 +309,7 @@
 
             <div class="container-fluid mx-auto m-5">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Success!</strong> Order added succesfully!
+                    <strong>Success!</strong> Supplier Information added succesfully!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -319,7 +319,7 @@
                 <div class="card bp-2 orders_container" >
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-cart4"></i>SUPPLIERS INFORMATION</h2>
+                            <h2 class="h2 h2-responsive-sm h2-responsive-md h2-responsive-lg" style="text-align: center"><i class="bi bi-truck"></i>SUPPLIERS INFORMATION</h2>
                             <div class="col d-flex justify-content-end">
                                 <a href="{{route('add-supplier.index')}}" class="btn btn-outline-dark my-3" ><i class="bi bi-plus-square-fill"></i> Add Suppliers</a>
                             </div>
