@@ -54,9 +54,9 @@
                                         <th>Customer Name</th>
                                         <th>Item</th>
                                         <th>Order Quantity</th>
-                                        <th>Order Status</th>
                                         <th>Order Date</th>
                                         <th>Order Type</th>
+                                        <th>Price</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -83,7 +83,14 @@
                                                             <div class="modal-body">
                                                                 <div class="container form_container">
                                                                     <form action="" class="form" method="POST" enctype="multipart/form-data">
-                                                                        <h3 class="text-white">Add Order</h3>
+                                                                        <h3 class="text-white">Add Customer Order</h3>
+
+                                                                        <div class="form-floating mb-3">
+                                                                            <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
+                                                                            <label for="Itemname">Customer Name</label>
+                                                                            <span class="text-danger">@error('Itemname') {{$message}} @enderror</span>
+                                                                            <p class="text-danger">Validation error message here</p>
+                                                                        </div>
 
                                                                         <div class="form-floating mb-3">
                                                                             <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
@@ -106,6 +113,13 @@
                                                                             <p class="text-danger">Validation error message here</p>
                                                                         </div>
 
+                                                                        <div class="form-floating mb-3">
+                                                                            <input type="number" class="form-control" name="Orderdate" id="Orderdate" value="{{old('Orderdate')}}" placeholder="Orderdate">
+                                                                            <label for="Orderdate">Price</label>
+                                                                            <span class="text-danger">@error('Orderdate') {{$message}} @enderror</span>
+                                                                            <p class="text-danger">Validation error message here</p>
+                                                                        </div>
+
                                                                         <div class="row justify-content-center">
                                                                             <div class="col-sm-6 text-center mb-3">
                                                                                 <div class="dropdown">
@@ -121,7 +135,7 @@
                                                                         </div>
 
                                                                         <div class="mt-5 text-center">
-                                                                            <button type="submit " class="btn btn-outline-light ">Add Order!</button>
+                                                                            <button type="submit " class="btn btn-outline-dark ">Add Order!</button>
                                                                         </div>
                                                                     </form>
                                                                 </div>
@@ -191,19 +205,15 @@
                             <table class="table" style="text-align:center;">
                                 <thead>
                                     <tr>
-                                        <th>Customer Name</th>
+                                        <th>Supplier Name</th>
                                         <th>Item</th>
                                         <th>Order Quantity</th>
-                                        <th>Order Status</th>
                                         <th>Order Date</th>
-                                        <th>Order Type</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td></td>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -223,7 +233,14 @@
                                                             <div class="modal-body">
                                                                 <div class="container form_container">
                                                                     <form action="" class="form" method="POST" enctype="multipart/form-data">
-                                                                        <h3 class="text-white">Add Order</h3>
+                                                                        <h3 class="text-white">Add Order to Supplier</h3>
+
+                                                                        <div class="form-floating mb-3">
+                                                                            <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
+                                                                            <label for="Itemname">Supplier Name</label>
+                                                                            <span class="text-danger">@error('Itemname') {{$message}} @enderror</span>
+                                                                            <p class="text-danger">Validation error message here</p>
+                                                                        </div>
 
                                                                         <div class="form-floating mb-3">
                                                                             <input type="text" class="form-control" name="Itemname" id="Itemname" value="{{old('Itemname')}}" placeholder="Itemname">
@@ -246,22 +263,8 @@
                                                                             <p class="text-danger">Validation error message here</p>
                                                                         </div>
 
-                                                                        <div class="row justify-content-center">
-                                                                            <div class="col-sm-6 text-center mb-3">
-                                                                                <div class="dropdown">
-                                                                                <a class="btn dropdown_btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                    Order Type
-                                                                                </a>
-                                                                                <ul class="dropdown-menu">
-                                                                                    <li><a class="dropdown-item" href="#">pick up</a></li>
-                                                                                    <li><a class="dropdown-item" href="#">delivery</a></li>
-                                                                                </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
                                                                         <div class="mt-5 text-center">
-                                                                            <button type="submit " class="btn btn-outline-light ">Add Order!</button>
+                                                                            <button type="submit " class="btn btn-outline-dark ">Add Order!</button>
                                                                         </div>
                                                                     </form>
                                                                 </div>
