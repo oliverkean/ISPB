@@ -51,8 +51,11 @@
                             </div>
                         
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Product title</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p>Current Stock: 26</p>
+                            <p>Price per Kilo: 40</p>
+                            <p>Price per Sack: 2000</p>
                         </div>
 
                        
@@ -75,8 +78,11 @@
                                 <!--Default pic here-->
                             </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Product title</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p>Current Stock: 26</p>
+                            <p>Price per Kilo: 40</p>
+                            <p>Price per Sack: 2000</p>
                         </div>
                         <div class="card-footer">
                             <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square"></i> Update</button>
@@ -90,8 +96,11 @@
                                 <!--Default pic here-->
                             </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Product title</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            <p>Current Stock: 26</p>
+                            <p>Price per Kilo: 40</p>
+                            <p>Price per Sack: 2000</p>
                         </div>
                         <div class="card-footer">
                             <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square"></i> Update</button>
@@ -106,8 +115,11 @@
                                 <!--Default pic here-->
                             </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Product title</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p>Current Stock: 26</p>
+                            <p>Price per Kilo: 40</p>
+                            <p>Price per Sack: 2000</p>
                         </div>
                         <div class="card-footer ">
                             <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square"></i> Update</button>
