@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(71, 69, 69);
 
 }
 
@@ -9,17 +9,19 @@ body{
     display: grid;
 
     grid-template-columns: 1fr 2fr;
-    gap: 3em;
+    gap: 1.5em;
 
 }
 
 .pic_container{
+    display: flex;
+    align-items: center;
 }
 
 .container_pic_info div{
     background-color: white;
     padding: 1.3em;
-    border-radius: 20px;
+    border-radius: 10px;
 
 }
 
