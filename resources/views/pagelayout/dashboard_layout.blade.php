@@ -34,15 +34,64 @@
                     </div>
                     <div class="offcanvas-body">
                         <div class="alert alert-success alert-dismissible fade show m-2" role="alert">
-                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <div class="card-header">
+                                <strong>07/02/2023!</strong> 
+
+                            </div>
+                            <p>
+                                <li>
+
+                                    Changes: New added products into the system.
+                                </li>
+                                <li>
+
+                                    Changes: Deleted item from the system.
+                                </li>
+                                
+                            </p> 
+
+                            <div class="card-footer ">
+                                Modified by: Ryle Fuentes
+                            </div>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-danger alert-dismissible fade show m-2" role="alert">
-                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <div class="card-header">
+
+                                <strong>07/12/2023!</strong> 
+                            </div>
+                            <li>
+
+                                Changes: New added products into the system.
+                            </li>
+                            <li>
+
+                                Changes: Deleted item from the system.
+                            </li>
+
+                            <div class="card-footer ">
+                                Modified by: Vincent Beato
+                            </div>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-secondary alert-dismissible fade show m-2" role="alert">
-                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <div class="card-header">
+
+                                <strong>07/03/2023!</strong> 
+                            </div>
+
+                            <li>
+
+                                Changes: New added products into the system.
+                            </li>
+                            <li>
+
+                                Changes: Deleted item from the system.
+                            </li>
+
+                            <div class="card-footer ">
+                                Modified by: Vincent Beato
+                            </div>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     </div>
