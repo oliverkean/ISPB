@@ -26,6 +26,16 @@
                 <a href="{{route('products-list.index')}}" class="nav-link">Products</a>
                 <a href="{{route('orders.index')}}" class="nav-link">Orders</a>
                 <a href="{{route('profile.index')}}" class="nav-link">Profile</a>
+                <button class="btn btn-link nav-link text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">History</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">History</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        text here
+                    </div>
+                </div>
                 <a href="" class="nav-link">Logout</a>
             </div>
             
