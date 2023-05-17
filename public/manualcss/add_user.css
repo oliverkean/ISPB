@@ -7,8 +7,9 @@ body{
     background-repeat: no-repeat;
 }
 
-.user_icon{
+.icon{
     font-size: 90px;
+    color: white;
 }
 
 .form_container{

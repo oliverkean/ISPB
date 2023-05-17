@@ -6,35 +6,17 @@
 @section('content')
     <div class="container form_container">
         <form action="" class="form" method="POST" enctype="multipart/form-data">
-            <div class="form-item mb-5 profile_pic">
+           <div class="container icon text-center mb-3">
+                <i class="bi bi-person-add"></i>
+           </div>
 
-                <img src="{{ asset('images/cat_default.jpg') }}" class=" image_pic rounded mx-auto d-block mb-2" alt="..." id="output" width="100px" height="100px">
-                <h3 class="text-white">Add New User</h3>
-            </div>
-
-            <div class="input-group">
-                <input type="file" class="form-control" id="inputGroupFile02" onchange="loadFile(event)">
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
-            </div>
-            <p class="text-warning">Validation error message here</p>
-
+          
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Firstname" id="Firstname" value="{{old('Firstname')}}" placeholder="Firstname">
                 <label for="Firstname">Firstname</label>
                 <span class="text-danger">@error('Firstname') {{$message}} @enderror</span>
                 <p class="text-warning">Validation error message here</p>
             </div>
-<<<<<<< HEAD
-            
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="Middlename" id="Middlename" value="{{old('Middlename')}}" placeholder="Middlename">
-                <label for="Middlename">Middlename</label>
-                <span class="text-danger">@error('Middlename') {{$message}} @enderror</span>
-                <p class="text-warning">Validation error message here</p>
-            </div>
-=======
->>>>>>> 8d52753defd04a00c4db64a1e8ea8b0815a0d9a6
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="Lastname" id="Lastname" value="{{old('Lastname')}}" placeholder="Lastname">
