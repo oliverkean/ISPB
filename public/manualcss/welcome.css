@@ -12,7 +12,6 @@ body{
 .welcome_title_container{
     color: white;
     width: 100%;
-
     padding-top: 25vh;
     display: flex;
     flex-direction: column;
